@@ -15,8 +15,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center gap-5">
-      <h1 className="mt-5 text-3xl font-bold">{erro && erro}</h1>
-      <h1 className="mt-5 text-3xl font-bold">{erro ? "" : `Dados filtrados: ${total}`}</h1>
+      <h1 className="mt-5 text-3xl font-bold">{erro ? erro : `Dados filtrados: ${total}`}</h1>
       <ol>
         {data &&
           data.map((d: any) => (
