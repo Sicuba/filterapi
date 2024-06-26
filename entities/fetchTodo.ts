@@ -1,5 +1,5 @@
 export const FetchTodo = () => {
-  const response = fetch("https://jsonplaceholder.typicode.com/posts")
+  const response = fetch("http://localhost/humanresources/Users")
     .then((response) => response.json())
     .then((data) => data)
     .catch((error) => console.log("Erro:", error));
